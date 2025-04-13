@@ -1,0 +1,19 @@
+[project]
+name = "a2a-types"
+version = "0.1.0"
+description = "Google A2A-compatible message types exposed as Pydantic models."
+readme = "README.md"
+authors = [
+    { name = "TerminalMan", email = "84923604+SecretiveShell@users.noreply.github.com" }
+]
+requires-python = ">=3.10"
+dependencies = [
+    "pydantic>2.0.0",
+]
+
+[project.scripts]
+a2a-types = "a2a_types:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
